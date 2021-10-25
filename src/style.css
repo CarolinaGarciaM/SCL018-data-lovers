@@ -1,12 +1,18 @@
 header {
     display: flex;
     height: 15vh;
-    background-color: #340000
+    background-color: #340000;
 }
 
 .logo {
     display: block;
     margin-left: 80%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    cursor: url('data:image/x-icon;base64,AAACAAEAICAQAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAxPj/AA2UGAD///8Aj4d+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEREREREREREAAAAAAAAAARAABEREREURAAAAAAAAABEQDMAEREREURAAAAAAAAARAMzMwEREREUQAAAAAAAAEQDMzMBERERFEAAAAAAAARAADMwERERERFAQAAAAAAEREQAMBERERERQEAAAAAABERERAFBQUFBQUBAAAAAAAREREQAERQRFBFAQAAAMwAAAAREAREREREUQEAAADMzADMAAABBQUFBFARAAAAzMzMzMwEBFBEUEUREQAAAMzMzMzMBEREREURERAAAADMzMzMzMAREREREREQAAAAzMzMzMzMwAERERERAAAAAMzMzMzMzMzBEQzNEAAAAADMzMzMzMzMEREMDRAAAAAAzMzMzMzMwRERDM0QAAAAAMzMzMzMzBEQARERAAAAAADMzMzMzMABAIgREQAAAAAAzMzMzMwAiAiAgRAAAAAAAMzMzMzBAAiIiIEAAAAAAADMzMzMAQAAiIABAAAAAAAAzMzMwBEQAAgAERAAAAAAAMzMzAAREAAIABEQAAAAAADMzMAAERAAAAAREAAAAAAAzMwAABEQAAAAERAAAAAAAMzAAAABAAAAAAEAAAAAAADMAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAB//gAAP/4AAD/8AAAf/AAAH/wAAA/4AAAH+AAAB/gAAAcYAAAHAAAABwAAAAcAAAAHAAAADwAAAA8AAAAfAAAAPwAAAD8AAAA/AAAAfwAAAH8AAAD/AAAA/wAEAf8AAiD/AIIg/wGDYP8Dg+D/B8fx/w/v+/8f////P////w=='), auto;
 }
 
 #imageContainer {
@@ -21,7 +27,7 @@ header {
     font-size: 300px;
 }
 
-#mononoke {
+.picture {
     display: flex;
     position: relative;
     height: auto;
@@ -29,22 +35,16 @@ header {
     opacity: 60%;
 }
 
-.title {
+.text {
     position: absolute;
-    top: 35%;
-    left: 65%;
+    top: 45%;
+    left: 60%;
     Font-family: arial;
-    Font-size: 350%;
+    Font-size: 250%;
     color: #ffff;
-}
+    text-shadow:  black 0.1em 0.1em 0.2em;
+    
 
-.subtitle {
-    position: absolute;
-    top: 55%;
-    left: 65%;
-    Font-family: arial;
-    Font-size: 310%;
-    color: #ffff;
 }
 
 .container-b {
@@ -53,53 +53,66 @@ header {
     margin-top: 20px;
 }
 
-#filter {
-    height: 40px;
-    width: 111px;
-    left: 14px;
-    top: 283px;
-    border-radius: 7px;
-    top: 283px;
-    border-radius: 7px;
-    background: #340000;
-    box-shadow: 0px 4px 4px 0px #00000040;
-    color: white;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: left;
+.selectors {
+    display: flex;
+    justify-items: center;
 }
 
-#order {
+.combo-box-filter {
     height: 40px;
-    width: 222px;
+    width: 200px;
     left: 14px;
-    top: 283px;
-    border-radius: 7px;
-    top: 283px;
     border-radius: 7px;
     background: #340000;
     box-shadow: 0px 4px 4px 0px #00000040;
-    color: white;
+    color: #ffff;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0em;
     text-align: left;
-    margin-right: 9%;
+    margin-top: 40px;
+    margin-left: 7%;
+} 
+
+.combo-box-order {
+    height: 40px;
+    width: 200px;
+    left: 14px;
+    border-radius: 7px;
+    background: #340000;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    color: #ffff;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 51%;
 }
 
 .movieFrame {
-    background-color: #340000;
-    border-radius: 3%;
-    width: 75%;
-    text-align: center;
-    color: #ffff;
-    font-family: arial;
-    box-shadow: 0px 4px 4px 0px #00000040;
+
+}
+
+.movieName {
+    font-size: 12.5px;
+    font-weight: bolder;
+}
+
+.movieScore {
+    font-size: 20px;
+    font-weight: bolder;
+    position: absolute;
+    background-color:  #340000;
+    border-radius: 0px 3px 3px 0px;
+    height: 30px;
+    width: 50px;
+    margin-top: -313px;
+    margin-left: 199px;
 }
 
 #posterFilms {
@@ -115,11 +128,19 @@ header {
 }
 
 #poster.moviePoster {
-    border-radius: 3% 3% 0% 0%;
+    border-radius: 3% 0% 0% 0%;
+    height: 285px;
+    width: 200px;
 }
 
 .movieCard {
-    width: 268px;
+    width: 200px;
+    margin: 1em;
+    height: 360px;
+    color: #fff;
+    background-color: #ffff;
+    border-radius: 3% 3% 3% 3%;
+    font-size: 10px;
 }
 
 footer {
@@ -135,3 +156,74 @@ h5 {
     text-align: right;
     margin-right: 65px;
 }
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffff;
+    border-radius: 50px;
+    border: solid #000000;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #340000;
+    border-radius: 20px;
+    border: 3px solid #000000;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 268px;
+    height: 360px;
+   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 268px;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #340000;
+    border-radius: 3%;
+    height: 335px;
+    width: 200px ;
+    text-align: center;
+    color: #ffff;
+    font-family: arial;
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: #340000;
+    color: #ffff;
+    transform: rotateY(180deg);
+    border-radius: 3%;
+    height: 335px;
+    width: 200px ;
+    font-size: 13px;
+    text-align: center;
+
+

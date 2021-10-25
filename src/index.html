@@ -2,15 +2,15 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>Ghibli</title>
-    <link rel="stylesheet" href="style.css" />
-
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghibli</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imágenes/ícono.png">
 </head>
 
 <body>
-    <header>
-        <!--<nav>
+  <header>
+    <!--<nav>
             <img class="navLogo" src="imágenes/logo.png" alt="Logo de totoro del Studio Ghibli">
         <i id="menuBurguer" class="fas fa-bars"></i>
         <ul class="menuDisable">
@@ -24,36 +24,71 @@
       
         </nav>
       -->
-      <img class="logo" src="imágenes/logo.png" alt="Logo de totoro del Studio Ghibli">
 
-    </header>
-    <main>
-      <div class="imageContainer">
-        <img id="mononoke" src="imágenes/mononoke.png" alt="princesa mononoke"> 
-        <div class="title">CATÁLOGO DE STUDIO GHIBLI</div>
-        <div class="subtitle">Las mejores 20 películas</div>
-          <!--<div class="container-b">
+    <img class="logo" src="imágenes/logo.png" alt="Logo de totoro del Studio Ghibli">
+
+  </header>
+  <main>
+
+
+    <div class="imageContainer">
+      <div class="slider">
+        <img class="picture" src="imágenes/mononoke.png" alt="princesa mononoke con lanza en su mano">
+        <div class="text">"Cualquier mujer es tan capaz de ser una heroína como un hombre lo es de ser un héroe." - Miyazaki
+        </div>
+      </div>
+
+      <div class="slider">
+        <img class="picture" src="imágenes/chihiro.jpg" alt="">
+        <div class="text">"Cualquier mujer es tan capaz de ser una heroína como un hombre lo es de ser un héroe." - Miyazaki
+        </div>
+      </div>
+
+      <div class="slider">
+        <img class="picture" src="imágenes/kiky.jpg" alt="">
+        <div class="text">"Cualquier mujer es tan capaz de ser una heroína como un hombre lo es de ser un héroe." - Miyazaki
+        </div>
+      </div>
+
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <!--<div class="container-b">
             <button id="filter" >filtrar por </button>
             <!--<button id="order">ordenar por mejor evaluada</button>-->
+    </div>
 
-            <section class="order">
-              <select id="orderByGender" class="combo-box-order">
-                <option value="sort-by" selected hidden>Ordenar por</option>
-                <option value="score" id="asc-score">Ranking</option>
-              </select>
-            </section>
-            
-        </div>
-    
-            <section id="posterFilms"></section>
-        
-        </main>
-        <footer>
-          <h5>copy me, copiar es bueno </h5>
-      </footer>
-  
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
+    <section class="selectors">
+
+      <select class="combo-box-order">
+        <option value="">Ordenar por</option>
+        <option value="title">Título</option>
+        <option value="rt_score">Mejor puntuadas</option>
+        <option value="release_date">Año de lanzamiento</option>
+      </select>
+
+      <select class="combo-box-filter">
+        <option value="">Filtrar por</option>
+        <option value="director">Dirigidas por Hayao Miyazaki</option>
+        <option value="gender">Personaje femenino</option>
+      </select>
+
+
+
+    </section>
+
+    <section id="posterFilms"></section>
+
+
+  </main>
+  <footer>
+    <h5>copy me, copiar es bueno. </h5>
+  </footer>
+
+  <!-- <div id="root"></div>-->
+  <script src="main.js" type="module"></script>
 </body>
 
 </html>
