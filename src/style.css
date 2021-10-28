@@ -4,9 +4,39 @@ header {
     background-color: #340000;
 }
 
+p {
+    display: block;
+    color: #ffff;
+    font-size: 40px;
+    margin-top: 5vh;
+    margin-left: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+nav {
+    display: inline;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+#filmography, #thematic {
+    background-color: #340000;
+    color: #ffff;
+    margin-top: 9vh;
+    margin-left: 20%;
+    font-size: 12px;
+}
+
 .logo {
     display: block;
+    position: absolute;
     margin-left: 80%;
+    height: inherit;
 }
 
 body {
@@ -32,7 +62,7 @@ body {
     position: relative;
     height: auto;
     width: 100%;
-    opacity: 60%;
+    opacity: 100%;
 }
 
 .text {
@@ -42,9 +72,7 @@ body {
     Font-family: arial;
     Font-size: 250%;
     color: #ffff;
-    text-shadow:  black 0.1em 0.1em 0.2em;
-    
-
+    text-shadow: #000000 0.1em 0.1em 0.2em;
 }
 
 .container-b {
@@ -73,8 +101,8 @@ body {
     letter-spacing: 0em;
     text-align: left;
     margin-top: 40px;
-    margin-left: 7%;
-} 
+    margin-left: 10%;
+}
 
 .combo-box-order {
     height: 40px;
@@ -91,11 +119,7 @@ body {
     letter-spacing: 0em;
     text-align: left;
     margin-top: 40px;
-    margin-left: 51%;
-}
-
-.movieFrame {
-
+    margin-left: 54%;
 }
 
 .movieName {
@@ -107,7 +131,7 @@ body {
     font-size: 20px;
     font-weight: bolder;
     position: absolute;
-    background-color:  #340000;
+    background-color: #340000;
     border-radius: 0px 3px 3px 0px;
     height: 30px;
     width: 50px;
@@ -120,10 +144,11 @@ body {
     justify-content: center;
     text-align: center;
     grid-template-columns: 20% 20% 20% 20%;
-    /*   grid-template-columns: repeat(auto-fill,minmax(200px, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     /* grid-auto-flow: dense; */
-    */ grid-template-rows: 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20%;
     margin-top: 30px;
+    margin-left: 7%;
     font-size: 15px;
 }
 
@@ -157,7 +182,7 @@ h5 {
     margin-right: 65px;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 20px;
 }
 
@@ -167,7 +192,7 @@ h5 {
     border: solid #000000;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: #340000;
     border-radius: 20px;
     border: 3px solid #000000;
@@ -177,53 +202,53 @@ h5 {
     background-color: transparent;
     width: 268px;
     height: 360px;
-   perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
     position: relative;
     width: 268px;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
     position: absolute;
     width: 200px;
     height: 100px;
     backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
     background-color: #340000;
     border-radius: 3%;
     height: 335px;
-    width: 200px ;
+    width: 200px;
     text-align: center;
     color: #ffff;
     font-family: arial;
     box-shadow: 0px 4px 4px 0px #00000040;
-  }
-  
-  /* Style the back side */
-  .flip-card-back {
+}
+
+/* Style the back side */
+.flip-card-back {
     background-color: #340000;
     color: #ffff;
     transform: rotateY(180deg);
     border-radius: 3%;
     height: 335px;
-    width: 200px ;
+    width: 200px;
     font-size: 13px;
     text-align: center;
-
-
+}
