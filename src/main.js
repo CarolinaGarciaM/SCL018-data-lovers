@@ -1,10 +1,4 @@
-<<<<<<< HEAD
 /*IMPORTACIÓN DE MÓDULOS*/
-=======
-import { example } from "./data.js";
-// import data from './data/lol/lol.js';
-
->>>>>>> 44aabfc778a3ad5a0156f45f33e89c6c99d67d08
 import data from "./data/ghibli/ghibli.js";
 import {sortData} from "./data.js";
 import {filterData} from "./data.js";
@@ -44,7 +38,6 @@ const drawCard = (films) => {
      <div class="flip-card">
      <div class="flip-card-inner">
        <div class="flip-card-front">
-
         <img class= "moviePoster" alt="Poster de la película" id="poster" src="${films.poster}">
         <figcaption class="movieName">${films.title}</figcaption>
         <figcaption class="movieYear">(${films.release_date})</figcaption>
@@ -55,7 +48,6 @@ const drawCard = (films) => {
         </div>
         </div>
       </div>
-
      </section>`;
 };
 
@@ -99,10 +91,8 @@ const print = (newFilms) => {
 });
 
 /* data.films.forEach(function(e){
-
   const females = e.people.filter( (element) =>
   element.gender === "Female");
   console.log(females);
 }); */
-
 
