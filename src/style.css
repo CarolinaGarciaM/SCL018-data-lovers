@@ -1,5 +1,6 @@
 header {
     display: flex;
+
     height: 15vh;
     background-color: #340000;
 }
@@ -139,10 +140,12 @@ body {
     margin-left: 199px;
 }
 
+
 #posterFilms {
     display: grid;
     justify-content: center;
     text-align: center;
+
     grid-template-columns: 20% 20% 20% 20%;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     /* grid-auto-flow: dense; */
