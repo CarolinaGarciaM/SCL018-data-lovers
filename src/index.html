@@ -11,13 +11,6 @@
 <body>
   <header>
 
-        <nav>
-        <div class="menuItem">
-          <button id="filmography">FILMOGRAFÍA</button>
-          <button id="thematic">TEMÁTICAS</button>
-        </div>
-        </nav> 
-
     <p>DATA GHIBLI</p>
     <img class="logo" src="imágenes/logo.png" alt="Logo de totoro del Studio Ghibli">
 
@@ -33,13 +26,13 @@
       </div>
 
       <div class="slider">
-        <img class="picture" src="imágenes/chihiro.jpg" alt="">
+        <img class="picture" src="imágenes/chihiro.jpg" alt="niña sorprendida rodeada de flores rosadas">
         <div class="text"><em>"Cualquier mujer es tan capaz de ser una heroína como un hombre lo es de ser un héroe."</em> - Miyazaki
         </div>
       </div>
 
       <div class="slider">
-        <img class="picture" src="imágenes/kiky.jpg" alt="">
+        <img class="picture" src="imágenes/kiky.jpg" alt="niña con un gato en el hombro">
         <div class="text"><em>"Cualquier mujer es tan capaz de ser una heroína como un hombre lo es de ser un héroe."</em> - Miyazaki
         </div>
       </div>
@@ -57,18 +50,18 @@
     <section class="selectors">
 
       <select class="combo-box-order">
-        <option value="">Ordenar por</option>
-        <option value="title">Título</option>
-        <option value="rt_score">Mejor puntuadas</option>
-        <option value="release_date">Año de lanzamiento</option>
+      <option value="" disabled selected>ORDENAR POR:</option>
+      <option value="title">Título</option>
+      <option value="rt_score">Mejor puntuadas</option>
+      <option value="release_date">Año de lanzamiento</option>
       </select>
 
       <select class="combo-box-filter">
-        <option value="">Filtrar por</option>
-        <option value="director">Dirigidas por Hayao Miyazaki</option>
-        <option value="gender">Personaje femenino</option>
+      <option value="" disabled selected>FILTRAR POR:</option>
+      <option value="Hayao Miyazaki">Dirigidas por Hayao Miyazaki</option>
       </select>
-    </section>
+
+   </section>
     <section id="posterFilms"></section>
 
 
