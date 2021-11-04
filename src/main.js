@@ -34,11 +34,12 @@ let newFilms = [...films];
 /*CONFIGURACIÓN DE LAS TARJETAS QUE SE MOSTRARÁN EN EL HTML*/
 const drawCard = (films) => {
   return `
+  
      <section class="movieCard">
      <div class="flip-card">
      <div class="flip-card-inner">
        <div class="flip-card-front">
-        <img class= "moviePoster" alt="Poster de la película" id="poster" src="${films.poster}">
+        <img class= "moviePoster" alt="Poster de la película" src="${films.poster}">
         <figcaption class="movieName">${films.title}</figcaption>
         <figcaption class="movieYear">(${films.release_date})</figcaption>
         <figcaption class="movieScore">${films.rt_score}</figcaption>

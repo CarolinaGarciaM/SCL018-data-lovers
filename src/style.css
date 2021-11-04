@@ -24,7 +24,8 @@ nav {
     margin-left: 30px;
 }
 
-#filmography, #thematic {
+#filmography,
+#thematic {
     background-color: #340000;
     color: #ffff;
     margin-top: 9vh;
@@ -46,11 +47,11 @@ body {
 }
 
 #imageContainer {
-    display: flex;
-    margin: 0%;
+
     width: 100%;
-    height: 100%;
-    position: static;
+    height: auto;
+    position: relative;
+    margin: auto; 
 }
 
 #textImage {
@@ -66,13 +67,14 @@ body {
 }
 
 .text {
+    display: flex;
     position: absolute;
-    top: 45%;
-    left: 60%;
-    Font-family: arial;
-    Font-size: 250%;
-    color: #ffff;
-    text-shadow: #000000 0.1em 0.1em 0.2em;
+    top: 40%;
+    left: 55%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5vw;
+    color: #fff;
+    text-shadow: #000 0.1em 0.1em 0.2em;
 }
 
 .container-b {
@@ -153,7 +155,7 @@ body {
 }
 
 #poster.moviePoster {
-    border-radius: 3% 0% 0% 0%;
+    border-radius: 3% 3% 0% 0%;
     height: 285px;
     width: 200px;
 }
@@ -222,7 +224,8 @@ h5 {
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 200px;
     height: 100px;
